@@ -1,5 +1,6 @@
 #pragma once
 #include "Core.h"
+#include "Events/Event.h"
 
 namespace Hazel{
 
@@ -9,8 +10,8 @@ namespace Hazel{
 		Application();
 		virtual ~Application();
 
-		void Run();
+		void Run(); // core game loop
 	};
 
-	Application* CreateApplication();
+	Application* CreateApplication(); // To be defined in client 
 }
